@@ -15,6 +15,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const cors = require('cors');
 require('dotenv').config();
 const listingsDB = require('./modules/listingsDB');
 const db = new listingsDB();
