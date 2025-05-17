@@ -8,7 +8,7 @@
 *
 * Name: Colin Reinhardt Student ID: 129657177 Date: 14-05-2025
 *
-* Published URL: ___________________________________________________________
+* Published URL: https://listings-api-nu.vercel.app/
 *
 ********************************************************************************/
 
@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/', (req, res) => {
-    {message: "API listening"}
+    res.json({message: "API listening"});
 });
 
 app.post('/api/listings', (req, res) => {
